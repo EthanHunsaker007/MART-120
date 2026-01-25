@@ -1,0 +1,8 @@
+GUIs (Graphical User Interfaces,) and CLIs (Command Line interfaces) are two 
+different avenues to achieve the same function. GUIs are interactable, visual 
+representations of a program, i.e. a button or scrollbar. These interfaces are 
+intuitive to use, but generally less efficient than the alternative, a CLI. 
+Command line interfaces, such as the Linux terminal or Git Bash, receive user 
+input through typed text commands. This system of input has a higher skill floor
+than its alternative, but once all of the various commands and syntax have been
+learned CLI's generally allow for much more efficient completion of tasks
