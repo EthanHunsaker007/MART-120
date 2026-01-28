@@ -5,4 +5,5 @@ intuitive to use, but generally less efficient than the alternative, a CLI.
 Command line interfaces, such as the Linux terminal or Git Bash, receive user 
 input through typed text commands. This system of input has a higher skill floor
 than its alternative, but once all of the various commands and syntax have been
-learned CLI's generally allow for much more efficient completion of tasks
+learned by the user CLI's generally allow for much more efficient completion of 
+tasks. 
