@@ -1,0 +1,87 @@
+body {
+  background-color: #303633;;
+}
+h1 {
+  color: #D4CB92;
+  margin-left: auto;
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+h2 {
+  color: #D4CB92;
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+h3 {
+  color: #E6E1C5;
+  text-align: center;
+  font-family: monospace;
+}
+ol {
+  color: #E6E1C5;
+  list-style-position: inside; 
+  text-align: center;
+  padding-left: 0; 
+  font-family: monospace;
+}
+ul {
+  color: #E6E1C5;
+  list-style-position: inside; 
+  text-align: center;
+  padding-left: 0; 
+  font-family: monospace;
+}
+p {
+  color: #E6E1C5;
+  max-width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+}
+.page_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+  font-weight: bolder;
+  font-size: 150%;
+}
+.contact_form {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+  text-align: center;
+}
+#name {
+    font-family: monospace;
+    color: #D4CB92;
+    background-color: #303633;
+}
+#email {
+  font: monospace;
+  color: #E6E1C5;
+  background-color: #303633;
+}
+button {
+  font-family: monospace;
+  color:#E6E1C5;
+  background-color: #303633;
+}
+a {
+    font-family: monospace;
+}
+a:link {
+  color: #E6E1C5;
+}
+a:visited {
+  color: #E6E1C5;
+}
+a:hover {
+  color: #BCD3F2;
+}
+a:active {
+  color: #80A4ED;
+}
