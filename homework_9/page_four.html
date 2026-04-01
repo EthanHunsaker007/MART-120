@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">     
+        <script src="bootstrap/js/jquery-4.0.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>   
+
+        <script>
+            var actualAnswer;
+            var questionsCorrect;
+            var questionsAnswered;
+            function start()
+            {
+                questionsAnswered = 0;
+                questionsCorrect = 0;
+
+                var numOne = Math.floor(Math.random() * 10);
+                var numTwo = Math.floor(Math.random() * 10);
+
+                actualAnswer = numOne + numTwo;
+                document.getElementById("theQuestion").innerHTML = "What is " + numOne + "+" + numTwo + "?";
+            }
+            function nextQuestion() 
+            { 
+                if (questionsAnswered < 10) {
+                    var numOne = Math.floor(Math.random() * 10);
+                    var numTwo = Math.floor(Math.random() * 10);
+
+                    actualAnswer = numOne + numTwo;
+                    document.getElementById("theQuestion").innerHTML = "What is " + numOne + "+" + numTwo + "?";  
+                } else {
+                    document.getElementById("theQuestion").innerHTML = "Game Over!!!";
+                    document.getElementById("finalResult").innerHTML = "You got " + questionsCorrect + " / 10 questions right!";
+                }
+            }
+            function check()
+            {
+                var answer = document.getElementById("txtAnswer").value;
+                if(answer == actualAnswer)
+                {
+                    document.getElementById("finalResult").innerHTML = "Good job!";
+                    questionsCorrect += 1;
+                }
+                else
+                {
+                    document.getElementById("finalResult").innerHTML = "Not quite!";
+                }      
+                questionsAnswered += 1;
+                nextQuestion();
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <h1>Math Game</h1>
+
+        <div id="game" style="justify-content: center; text-align: center; min-height: 200px; margin-top: 100px;">
+            <div id="theQuestion"></div>
+            Your answer
+            <input type="text" id="txtAnswer">
+            <br>
+            <button id="btnSubmit" onClick="check()">Submit</button>
+            <div id="finalResult"></div>
+        </div>
+
+        <div class="page_buttons">
+            <a href="index.html" class="btn btn-default" style="font-family: monospace;">Home Page</a>
+            <a href="page_two.html" class="btn btn-default" style="font-family: monospace;">Short Story</a>
+            <a href="page_three.html" class="btn btn-default" style="font-family: monospace;">Contact Form</a>
+        </div>
+    </body>
+</html>
