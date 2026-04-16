@@ -201,7 +201,6 @@ function draw() {
     }
 
     background(48, 54, 51);
-    strokeWeight(4)
 
     for (let i = 0; i < simulation.circles.length; i++) {
         let circle = simulation.circles[i];
